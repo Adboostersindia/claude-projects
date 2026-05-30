@@ -36,12 +36,16 @@ body {
 .hero {
   background: #050114;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .hero-inner {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 50px 40px 50px;
+  padding: 40px 40px;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 20px;
