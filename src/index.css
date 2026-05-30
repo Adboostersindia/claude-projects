@@ -11,8 +11,14 @@
   --white: #ffffff;
   --gray: #9ca3af;
   --border: rgba(139, 92, 246, 0.2);
-  font-family: 'Inter', sans-serif;
+  --font-heading: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
 }
 
 body {
