@@ -47,7 +47,7 @@ export default function Hero() {
               <div className="price-label">SPECIAL PRICE</div>
               <div className="price-amount">₹10,000</div>
               <div className="price-detail">1:1 Private Session</div>
-              <div className="price-detail">90 – 120 Minutes</div>
+              <div className="price-detail">2 Hours</div>
             </div>
             <div className="who-card">
               <h3>👥 Who Is This For?</h3>
