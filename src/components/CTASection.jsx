@@ -32,11 +32,11 @@ export default function CTASection() {
 
           <div className="cta-left">
             <h3>Ready To <span className="purple">Launch Your Ads?</span></h3>
-            <p>Let's build &amp; launch high-converting ads that bring you more leads, customers and revenue.</p>
+            <p>Let's build and launch high-converting campaigns designed to generate more leads, customers, and revenue for your business.</p>
             <div className="cta-checks">
-              <span><span className="check">✓</span> Secure Booking</span>
-              <span><span className="check">✓</span> Limited Slots</span>
-              <span><span className="check">✓</span> 100% Value Packed Session</span>
+              <span><span className="check">✓</span> Secure Your Spot</span>
+              <span><span className="check">✓</span> Limited Availability</span>
+              <span><span className="check">✓</span> 1:1 Strategy &amp; Launch Session</span>
             </div>
             <div className="cta-price-block">
               <div className="cta-price">₹10,000</div>
