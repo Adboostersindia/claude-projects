@@ -98,6 +98,14 @@
 
 .form-wrap iframe { display: block; }
 
+.form-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .cta-grid { grid-template-columns: 1fr; gap: 40px; }

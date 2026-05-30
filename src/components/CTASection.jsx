@@ -45,6 +45,7 @@ export default function CTASection() {
           </div>
 
           <div className="form-wrap">
+            <p className="form-heading">Ready to launch your ads? Complete the application below. I'll reach out shortly.</p>
             <iframe
               data-tally-src="https://tally.so/embed/pbvGz8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
               loading="lazy"
