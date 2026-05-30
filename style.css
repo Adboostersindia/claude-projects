@@ -34,15 +34,18 @@ body {
 
 /* ── HERO ── */
 .hero {
-  padding: 60px 0 40px;
   background: #050114;
+  overflow: hidden;
 }
 
-.hero .container {
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
+  gap: 20px;
+  align-items: start;
 }
 
 .badge {
@@ -75,36 +78,21 @@ h1 {
 .hero-features {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  gap: 0;
-  margin-bottom: 32px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 16px 12px;
+  gap: 28px;
+  margin-bottom: 36px;
 }
 
 .feature-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-  flex: 1;
-  padding: 0 8px;
-}
-
-.feature-divider {
-  width: 1px;
-  align-self: stretch;
-  background: var(--border);
-  margin: 4px 0;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .feature-icon {
   width: 52px;
   height: 52px;
-  background: rgba(139, 92, 246, 0.2);
+  background: rgba(139, 92, 246, 0.25);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -113,21 +101,22 @@ h1 {
 }
 
 .feature-icon img {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
 }
 
 .feature-item strong {
   display: block;
-  font-size: 0.88rem;
-  margin-bottom: 2px;
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .feature-item p {
   color: var(--gray);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   line-height: 1.4;
+  margin: 0;
 }
 
 .btn-primary {
@@ -152,75 +141,50 @@ h1 {
 .trust-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  font-size: 0.8rem;
+  gap: 14px;
+  font-size: 0.82rem;
   color: var(--gray);
+  margin-top: 4px;
+}
+
+.trust-badges span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 /* ── HERO RIGHT ── */
 .hero-right {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 420px;
+  flex-direction: column;
+  align-items: flex-end;
 }
-
-.person-placeholder {
-  width: 260px;
-  height: 360px;
-  background: linear-gradient(160deg, rgba(139,92,246,0.3) 0%, rgba(10,10,30,0.8) 100%);
-  border-radius: 20px;
-  border: 1px solid var(--border);
-}
-
-.person-photo {
-  width: 240px;
-  height: 320px;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 20px;
-  border: 2px solid var(--border);
-  display: block;
-}
-
-.platform-badge {
-  position: absolute;
-  background: rgba(15, 15, 35, 0.95);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 10px 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-}
-
-.google-badge { top: 20px; left: 0; }
-.meta-badge   { top: 20px; right: 0; }
 
 .hero-img {
   width: 100%;
-  max-width: 460px;
   display: block;
-  border-radius: 20px;
-  -webkit-mask-image: radial-gradient(ellipse 90% 90% at 50% 40%, black 50%, transparent 100%);
-  mask-image: radial-gradient(ellipse 90% 90% at 50% 40%, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
 
-.price-card {
+.hero-overlay-cards {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: var(--bg-card2);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 220px;
+}
+
+.price-card {
+  background: rgba(10, 5, 30, 0.85);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 18px 22px;
+  padding: 16px 18px;
   text-align: center;
-  min-width: 160px;
+  backdrop-filter: blur(10px);
 }
 
 .price-label {
@@ -245,29 +209,37 @@ h1 {
 
 /* ── WHO IS THIS FOR ── */
 .who-card {
-  background: var(--bg-card);
+  background: rgba(10, 5, 30, 0.85);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 24px 28px;
-  margin-top: 32px;
+  padding: 16px 18px;
+  backdrop-filter: blur(10px);
 }
 
 .who-card h3 {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .who-card ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .who-card ul li {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.check {
+  color: var(--purple-bright);
+  font-weight: 700;
 }
 
 /* ── WHAT SECTION ── */
@@ -465,9 +437,9 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-  .hero .container { grid-template-columns: 1fr; }
+  .hero-inner { grid-template-columns: 1fr; padding: 40px 20px 0; }
   .hero-right { display: none; }
-  .who-card ul { grid-template-columns: 1fr; }
+  .hero-features { gap: 16px; }
   .cards-grid { grid-template-columns: 1fr 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .center-cta { order: -1; }
