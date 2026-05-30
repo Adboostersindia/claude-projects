@@ -41,8 +41,18 @@ export default function Hero() {
         </div>
 
         <div className="hero-right">
-          <img src="/herosection.png" alt="Launch Ads With Me" className="hero-img" />
-          <div className="hero-overlay-cards">
+          {/* Image with mobile price card overlay */}
+          <div className="hero-img-wrap">
+            <img src="/herosection.png" alt="Launch Ads With Me" className="hero-img" />
+            <div className="price-card mobile-price">
+              <div className="price-label">SPECIAL PRICE</div>
+              <div className="price-amount">₹10,000</div>
+              <div className="price-detail">1:1 Private Session</div>
+              <div className="price-detail">2 Hours</div>
+            </div>
+          </div>
+          {/* Desktop cards column */}
+          <div className="desktop-cards">
             <div className="price-card">
               <div className="price-label">SPECIAL PRICE</div>
               <div className="price-amount">₹10,000</div>
@@ -58,6 +68,16 @@ export default function Hero() {
                 <li><span className="check">✓</span> Agencies &amp; Marketing Teams</li>
               </ul>
             </div>
+          </div>
+          {/* Mobile who card */}
+          <div className="who-card mobile-who">
+            <h3>👥 Who Is This For?</h3>
+            <ul>
+              <li><span className="check">✓</span> Business Owners &amp; Entrepreneurs</li>
+              <li><span className="check">✓</span> Local Businesses &amp; Service Providers</li>
+              <li><span className="check">✓</span> Freelancers &amp; Marketing Professionals</li>
+              <li><span className="check">✓</span> Agencies &amp; Marketing Teams</li>
+            </ul>
           </div>
         </div>
 

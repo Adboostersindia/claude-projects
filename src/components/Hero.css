@@ -142,6 +142,10 @@ h1 {
   gap: 16px;
 }
 
+.hero-img-wrap {
+  position: relative;
+}
+
 .hero-img {
   width: 100%;
   display: block;
@@ -149,13 +153,17 @@ h1 {
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
-.hero-overlay-cards {
+/* Desktop cards column */
+.desktop-cards {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 210px;
-  align-self: center;
 }
+
+/* Hide mobile-only elements on desktop */
+.mobile-price { display: none; }
+.mobile-who { display: none; }
 
 /* Price Card */
 .price-card {
@@ -220,7 +228,104 @@ h1 {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-inner { grid-template-columns: 1fr; padding: 40px 20px; }
-  .hero-right { display: none; }
-  .trust-badges { flex-wrap: wrap; }
+  .hero {
+    min-height: unset;
+    padding-bottom: 40px;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 32px 20px 20px;
+    gap: 24px;
+  }
+
+  /* Left side - stacks normally */
+  .hero-left { order: 1; }
+
+  h1 { font-size: 2.6rem; }
+
+  .hero-sub { max-width: 100%; }
+
+  .hero-features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .feature-item { align-items: center; text-align: center; }
+
+  .feature-icon { width: 64px; height: 64px; border-radius: 16px; }
+  .feature-icon img { width: 64px; height: 64px; }
+
+  .feature-item strong { font-size: 0.88rem; }
+  .feature-item p { font-size: 0.75rem; }
+
+  .btn-primary {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 16px 24px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+  }
+
+  .trust-badges {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .trust-badges span {
+    justify-content: center;
+    padding: 0 6px;
+    border-right: 1px solid rgba(139, 92, 246, 0.3);
+  }
+
+  .trust-badges span:last-child { border-right: none; }
+
+  /* Right side */
+  .hero-right {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-img-wrap {
+    position: relative;
+  }
+
+  .hero-img {
+    width: 100%;
+    border-radius: 16px;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  /* Show mobile price card overlaid on image */
+  .mobile-price {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 170px;
+  }
+
+  /* Hide desktop cards column */
+  .desktop-cards { display: none; }
+
+  /* Show mobile who card below image */
+  .mobile-who {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-who ul, .who-card ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
 }
