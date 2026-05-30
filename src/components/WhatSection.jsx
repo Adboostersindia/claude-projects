@@ -1,12 +1,11 @@
 import './WhatSection.css'
 
 const items = [
-  { icon: '⚙️', title: 'Account Setup', desc: 'Proper account structure for long-term success.' },
-  { icon: '👥', title: 'Audience Targeting', desc: 'Find & target your ideal customers with precision.' },
-  { icon: '🏗️', title: 'Campaign Structure', desc: 'Build high-converting campaigns the right way.' },
-  { icon: '✏️', title: 'Ad Creation Guide', desc: 'Craft ad concepts that attract, engage & convert.' },
-  { icon: '💻', title: 'Tracking & Pixels', desc: 'Set up tracking to measure every important action.' },
-  { icon: '🚀', title: 'Launch Roadmap', desc: 'Step-by-step plan to launch, test & scale profitably.' },
+  { icon: '/sicon1.png', title: 'Account Setup', desc: 'Proper account structure for long-term success.' },
+  { icon: '/sicon2.png', title: 'Audience Targeting', desc: 'Find & target your ideal customers with precision.' },
+  { icon: '/sicon3.png', title: 'Campaign Structure', desc: 'Build high-converting campaigns the right way.' },
+  { icon: '/sicon4.png', title: 'Ad Creation Guide', desc: 'Craft ad concepts that attract, engage & convert.' },
+  { icon: '/sicon5.png', title: 'Launch Roadmap', desc: 'Step-by-step plan to launch, test & scale profitably.' },
 ]
 
 export default function WhatSection() {
@@ -17,7 +16,9 @@ export default function WhatSection() {
         <div className="cards-grid">
           {items.map((item) => (
             <div className="card" key={item.title}>
-              <div className="card-icon">{item.icon}</div>
+              <div className="card-icon">
+                <img src={item.icon} alt={item.title} />
+              </div>
               <h4>{item.title}</h4>
               <p>{item.desc}</p>
             </div>
