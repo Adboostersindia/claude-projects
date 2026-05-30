@@ -154,6 +154,16 @@ h1 {
   border: 1px solid var(--border);
 }
 
+.person-photo {
+  width: 240px;
+  height: 320px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 20px;
+  border: 2px solid var(--border);
+  display: block;
+}
+
 .platform-badge {
   position: absolute;
   background: rgba(15, 15, 35, 0.95);
