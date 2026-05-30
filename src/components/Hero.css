@@ -13,9 +13,15 @@
   padding: 40px 40px;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: auto auto;
   gap: 20px;
   align-items: center;
 }
+
+/* Desktop: hero-left and hero-actions stack in left column */
+.hero-left { grid-column: 1; grid-row: 1; }
+.hero-actions { grid-column: 1; grid-row: 2; }
+.hero-right { grid-column: 2; grid-row: 1 / 3; }
 
 .badge {
   display: inline-block;
@@ -239,8 +245,14 @@ h1 {
     gap: 24px;
   }
 
-  /* Left side - stacks normally */
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
   .hero-left { order: 1; }
+  .hero-right { order: 2; }
+  .hero-actions { order: 3; }
 
   h1 { font-size: 2.6rem; }
 
