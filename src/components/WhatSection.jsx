@@ -5,7 +5,6 @@ const items = [
   { icon: '👥', title: 'Audience Targeting', desc: 'Find & target your ideal customers with precision.' },
   { icon: '🏗️', title: 'Campaign Structure', desc: 'Build high-converting campaigns the right way.' },
   { icon: '✏️', title: 'Ad Creation Guide', desc: 'Craft ad concepts that attract, engage & convert.' },
-  { icon: '💻', title: 'Tracking & Pixels', desc: 'Set up tracking to measure every important action.' },
   { icon: '🚀', title: 'Launch Roadmap', desc: 'Step-by-step plan to launch, test & scale profitably.' },
 ]
 
