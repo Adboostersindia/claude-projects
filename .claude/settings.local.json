@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"D:\\\\winget install --id GitHub.cli\" -ErrorAction SilentlyContinue; Write-Host \"---\"; Test-Path \"C:\\\\Users\\\\Manuj\\\\AppData\\\\Roaming\\\\GitHub CLI\\\\hosts.yml\"; Get-ChildItem \"$env:APPDATA\\\\GitHub CLI\" -ErrorAction SilentlyContinue)",
+      "PowerShell(& \"D:\\\\winget install --id GitHub.cli\\\\gh.exe\" auth status 2>&1)"
+    ]
+  }
+}
