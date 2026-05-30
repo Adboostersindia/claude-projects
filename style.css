@@ -41,7 +41,7 @@ body {
 .hero-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 40px 0;
+  padding: 50px 40px 50px;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 20px;
@@ -142,7 +142,7 @@ h1 {
 
 .trust-badges {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 14px;
   font-size: 0.82rem;
   color: var(--gray);
@@ -174,7 +174,8 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 200px;
+  width: 210px;
+  align-self: center;
 }
 
 .price-card {
