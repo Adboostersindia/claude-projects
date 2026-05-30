@@ -40,11 +40,6 @@ export default function CTASection() {
               </div>
             </div>
           </div>
-          <div className="cta-right">
-            <div className="cta-price">₹10,000</div>
-            <div className="cta-price-sub">1:1 Private Session (2 Hours)</div>
-            <a href="#" className="btn-primary" data-tally-open="pbvGz8" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Book Your Ad Launch Session &nbsp;→</a>
-          </div>
         </div>
 
         <div className="form-wrap">
