@@ -42,7 +42,8 @@
 
 .center-cta { text-align: center; min-width: 180px; }
 
-.target-icon { font-size: 3.5rem; margin-bottom: 16px; }
+.target-icon { margin-bottom: 16px; }
+.target-icon img { width: 80px; height: 80px; object-fit: contain; }
 
 .center-cta h3 { font-size: 1.3rem; font-weight: 800; line-height: 1.3; color: #fff; }
 

@@ -15,7 +15,7 @@ export default function WhySection() {
           </ul>
         </div>
         <div className="center-cta">
-          <div className="target-icon">🎯</div>
+          <div className="target-icon"><img src="/ticon.png" alt="Target" /></div>
           <h3>Launch Today.<br /><span className="purple">Grow Tomorrow.</span></h3>
         </div>
         <div className="walk-box">
