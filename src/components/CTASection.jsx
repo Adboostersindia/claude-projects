@@ -5,7 +5,6 @@ export default function CTASection() {
     <section className="cta-section" id="book">
       <div className="container cta-grid">
         <div className="cta-left">
-          <div className="cta-icon">📅</div>
           <div>
             <h3>Ready To <span className="purple">Launch Your Ads?</span></h3>
             <p>Let's build &amp; launch high-converting ads that bring you more leads, customers and revenue.</p>
