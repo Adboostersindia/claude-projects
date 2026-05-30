@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <a href="#book" className="btn-primary">Book Your Ad Launch Session &nbsp;→</a>
+          <a href="#" className="btn-primary" data-tally-open="pbvGz8" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Book Your Ad Launch Session &nbsp;→</a>
 
           <div className="trust-badges">
             <span><span className="check">✓</span> Limited Slots</span>
