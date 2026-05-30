@@ -146,12 +146,14 @@ h1 {
   min-height: 420px;
 }
 
-.person-placeholder {
+.person-photo {
   width: 260px;
   height: 360px;
-  background: linear-gradient(160deg, rgba(139,92,246,0.3) 0%, rgba(10,10,30,0.8) 100%);
+  object-fit: cover;
+  object-position: top;
   border-radius: 20px;
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
+  display: block;
 }
 
 .platform-badge {
