@@ -5,7 +5,7 @@
 }
 
 :root {
-  --bg: #07071a;
+  --bg: #050114;
   --bg-card: #10102a;
   --bg-card2: #13133a;
   --purple: #8b5cf6;
@@ -34,16 +34,21 @@ body {
 
 /* ── HERO ── */
 .hero {
-  padding: 60px 0 40px;
-  background: radial-gradient(ellipse at 70% 20%, rgba(124, 58, 237, 0.15) 0%, transparent 60%),
-              radial-gradient(ellipse at 20% 80%, rgba(124, 58, 237, 0.08) 0%, transparent 50%),
-              var(--bg);
+  background: #050114;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.hero .container {
+.hero-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
   align-items: center;
 }
 
@@ -76,38 +81,48 @@ h1 {
 
 .hero-features {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
+  flex-direction: row;
+  gap: 28px;
+  margin-bottom: 36px;
 }
 
 .feature-item {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
+  gap: 8px;
 }
 
 .feature-icon {
-  width: 44px;
-  height: 44px;
-  background: rgba(139, 92, 246, 0.2);
-  border-radius: 10px;
+  width: 56px;
+  height: 56px;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.feature-icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 .feature-item strong {
   display: block;
   font-size: 0.95rem;
-  margin-bottom: 2px;
+  font-weight: 700;
 }
 
 .feature-item p {
   color: var(--gray);
   font-size: 0.82rem;
+  line-height: 1.4;
+  margin: 0;
 }
 
 .btn-primary {
@@ -131,59 +146,49 @@ h1 {
 
 .trust-badges {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  font-size: 0.8rem;
+  flex-wrap: nowrap;
+  gap: 14px;
+  font-size: 0.82rem;
   color: var(--gray);
+  margin-top: 4px;
+}
+
+.trust-badges span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 /* ── HERO RIGHT ── */
 .hero-right {
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  justify-content: center;
-  min-height: 420px;
+  gap: 16px;
 }
 
-.person-photo {
-  width: 260px;
-  height: 360px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 20px;
-  border: 2px solid var(--border);
+.hero-img {
+  width: 100%;
   display: block;
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
-.platform-badge {
-  position: absolute;
-  background: rgba(15, 15, 35, 0.95);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 10px 16px;
+.hero-overlay-cards {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  flex-direction: column;
+  gap: 12px;
+  width: 210px;
+  align-self: center;
 }
-
-.google-badge { top: 20px; left: 0; }
-.meta-badge   { top: 20px; right: 0; }
 
 .price-card {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: var(--bg-card2);
+  background: rgba(10, 5, 30, 0.85);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 18px 22px;
+  padding: 16px 18px;
   text-align: center;
-  min-width: 160px;
+  backdrop-filter: blur(10px);
 }
 
 .price-label {
@@ -208,29 +213,37 @@ h1 {
 
 /* ── WHO IS THIS FOR ── */
 .who-card {
-  background: var(--bg-card);
+  background: rgba(10, 5, 30, 0.85);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 24px 28px;
-  margin-top: 32px;
+  padding: 16px 18px;
+  backdrop-filter: blur(10px);
 }
 
 .who-card h3 {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .who-card ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .who-card ul li {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.check {
+  color: var(--purple-bright);
+  font-weight: 700;
 }
 
 /* ── WHAT SECTION ── */
@@ -428,9 +441,9 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-  .hero .container { grid-template-columns: 1fr; }
+  .hero-inner { grid-template-columns: 1fr; padding: 40px 20px 0; }
   .hero-right { display: none; }
-  .who-card ul { grid-template-columns: 1fr; }
+  .hero-features { gap: 16px; }
   .cards-grid { grid-template-columns: 1fr 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .center-cta { order: -1; }
