@@ -11,7 +11,9 @@ export default function Hero() {
           <p className="hero-sub">
             A 1:1 private session to launch high-converting Google &amp; Meta Ads that bring <span className="purple">real results.</span>
           </p>
+        </div>
 
+        <div className="hero-actions">
           <div className="hero-features">
             <div className="feature-item">
               <div className="feature-icon"><img src="/icon1.png" alt="Strategic Setup" /></div>
