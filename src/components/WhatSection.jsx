@@ -5,8 +5,8 @@ const items = [
   { icon: '/sicon2.png', title: 'Audience Targeting', desc: 'Find & target your ideal customers with precision.' },
   { icon: '/sicon3.png', title: 'Campaign Structure', desc: 'Build high-converting campaigns the right way.' },
   { icon: '/sicon4.png', title: 'Ad Creation Guide', desc: 'Craft ad concepts that attract, engage & convert.' },
-  { icon: '/sicon5.png', title: 'Launch Roadmap', desc: 'Step-by-step plan to launch, test & scale profitably.' },
   { icon: '/sicon6.png', title: 'Creative Strategy', desc: 'Learn what ad creatives actually convert and how to structure winning image, video, and copy angles.' },
+  { icon: '/sicon5.png', title: 'Launch Roadmap', desc: 'Step-by-step plan to launch, test & scale profitably.' },
 ]
 
 export default function WhatSection() {
