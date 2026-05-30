@@ -54,6 +54,16 @@
 
 .secure-note { font-size: 0.78rem; color: #9ca3af; }
 
+.form-wrap {
+  margin-top: 40px;
+  background: rgba(16, 16, 42, 0.6);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.form-wrap iframe { min-height: 337px; }
+
 @media (max-width: 768px) {
   .cta-grid { grid-template-columns: 1fr; }
   .cta-left { flex-direction: column; }
