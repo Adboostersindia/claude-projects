@@ -19,7 +19,6 @@ export default function CTASection() {
           <div className="cta-price">₹10,000</div>
           <div className="cta-price-sub">1:1 Private Session (2 Hours)</div>
           <a href="#" className="btn-primary">Book Your Ad Launch Session &nbsp;→</a>
-          <div className="secure-note">🔒 Secure Payment &nbsp;•&nbsp; Instant Confirmation</div>
         </div>
       </div>
     </section>
