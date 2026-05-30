@@ -49,9 +49,9 @@ h1 {
 
 /* Features */
 .hero-features {
-  display: flex;
-  flex-direction: row;
-  gap: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   margin-bottom: 36px;
 }
 
