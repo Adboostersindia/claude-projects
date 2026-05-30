@@ -6,7 +6,7 @@
           {
             "type": "command",
             "shell": "powershell",
-            "command": "Set-Location 'D:\\Nitin\\Claude Projects'; git add -A; $status = git status --porcelain; if ($status) { $msg = \"Auto-commit: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')\"; git commit -m $msg; git push origin dev 2>&1 } else { Write-Host 'Nothing to commit' }",
+            "command": "Set-Location 'D:\\Nitin\\Claude Projects'; git add -A; $status = git status --porcelain; if ($status) { $msg = \"Auto-commit: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')\"; git commit -m $msg; git push origin dev; git checkout master; git merge dev; git push origin master; $env:PATH = [System.Environment]::GetEnvironmentVariable('PATH','Machine') + ';' + [System.Environment]::GetEnvironmentVariable('PATH','User'); vercel --prod 2>&1; git checkout dev } else { Write-Host 'Nothing to commit' }",
             "statusMessage": "Pushing changes to GitHub...",
             "timeout": 60
           }
