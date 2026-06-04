@@ -4,7 +4,9 @@
       "PowerShell(Get-ChildItem \"D:\\\\winget install --id GitHub.cli\" -ErrorAction SilentlyContinue; Write-Host \"---\"; Test-Path \"C:\\\\Users\\\\Manuj\\\\AppData\\\\Roaming\\\\GitHub CLI\\\\hosts.yml\"; Get-ChildItem \"$env:APPDATA\\\\GitHub CLI\" -ErrorAction SilentlyContinue)",
       "PowerShell(& \"D:\\\\winget install --id GitHub.cli\\\\gh.exe\" auth status 2>&1)",
       "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); vercel --version 2>&1; node --version 2>&1; npm --version 2>&1)",
-      "PowerShell(New-Item -ItemType Directory -Path \"D:\\\\Nitin\\\\Claude Projects\\\\Nishant Kirtan Landing Page\")"
+      "PowerShell(New-Item -ItemType Directory -Path \"D:\\\\Nitin\\\\Claude Projects\\\\Nishant Kirtan Landing Page\")",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell(\\(Get-Command node -ErrorAction SilentlyContinue\\).Source; \\(Get-Command python -ErrorAction SilentlyContinue\\).Source; \\(Get-Command npx -ErrorAction SilentlyContinue\\).Source)"
     ]
   }
 }
