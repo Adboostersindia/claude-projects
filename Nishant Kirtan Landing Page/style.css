@@ -84,7 +84,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
-  background: radial-gradient(ellipse at 70% 50%, rgba(120,40,0,0.6) 0%, var(--dark) 65%);
+  background: #0d0200;
   position: relative;
   overflow: hidden;
 }
@@ -92,9 +92,13 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 20% 80%, rgba(201,162,39,0.05) 0%, transparent 60%);
+  background:
+    radial-gradient(ellipse at 75% 45%, rgba(160,55,10,0.55) 0%, transparent 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(201,162,39,0.04) 0%, transparent 50%);
   pointer-events: none;
+  z-index: 0;
 }
+.hero-content { position: relative; z-index: 1; }
 
 .hero-heading {
   font-family: 'Playfair Display', serif;
@@ -214,16 +218,22 @@ body {
 }
 .hero-artist-img {
   width: 100%;
-  max-width: 520px;
-  height: 620px;
+  max-width: 560px;
+  height: 680px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 24px;
-  mask-image: linear-gradient(to bottom, black 60%, transparent 100%), linear-gradient(to left, black 70%, transparent 100%);
-  mask-composite: intersect;
-  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%), linear-gradient(to left, black 70%, transparent 100%);
+  border-radius: 0;
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, black 22%, black 80%, transparent 100%),
+    linear-gradient(to bottom, black 55%, transparent 100%);
   -webkit-mask-composite: source-in;
-  filter: drop-shadow(0 0 60px rgba(180,60,0,0.4));
+  mask-image:
+    linear-gradient(to right, transparent 0%, black 22%, black 80%, transparent 100%),
+    linear-gradient(to bottom, black 55%, transparent 100%);
+  mask-composite: intersect;
 }
 
 /* ── TRUST BAR ── */
