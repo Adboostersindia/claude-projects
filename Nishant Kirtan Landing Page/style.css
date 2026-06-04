@@ -79,7 +79,7 @@ body {
 /* ── HERO ── */
 .hero {
   min-height: 100vh;
-  padding: 120px 48px 80px;
+  padding: 60px 48px 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
