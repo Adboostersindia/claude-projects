@@ -212,32 +212,18 @@ body {
   align-items: flex-end;
   height: 100%;
 }
-.hero-image-placeholder {
+.hero-artist-img {
   width: 100%;
-  max-width: 460px;
-  height: 560px;
-  background: linear-gradient(160deg, rgba(120,40,0,0.4) 0%, rgba(201,162,39,0.08) 100%);
+  max-width: 520px;
+  height: 620px;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 24px;
-  border: 1px solid rgba(201,162,39,0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-.hero-image-placeholder::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse at 50% 30%, rgba(201,162,39,0.12) 0%, transparent 70%);
-}
-.artist-silhouette { width: 220px; opacity: 0.6; }
-.placeholder-text {
-  font-size: 13px;
-  color: rgba(201,162,39,0.4);
-  letter-spacing: 1px;
-  margin-top: 12px;
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%), linear-gradient(to left, black 70%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%), linear-gradient(to left, black 70%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  filter: drop-shadow(0 0 60px rgba(180,60,0,0.4));
 }
 
 /* ── TRUST BAR ── */
