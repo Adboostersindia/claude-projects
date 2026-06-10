@@ -5,6 +5,7 @@ import DifferentSection from './components/DifferentSection'
 import FAQSection from './components/FAQSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
+import StickyCTA from './components/StickyCTA'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <FAQSection />
       <CTASection />
       <Footer />
+      <StickyCTA />
     </>
   )
 }
