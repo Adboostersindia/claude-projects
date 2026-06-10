@@ -40,3 +40,12 @@ iframe[src*="tally.so"] {
   background: #050114 !important;
   background-color: #050114 !important;
 }
+
+/* Make Tally popup fit the viewport on mobile without an outer scrollbar */
+@media (max-width: 768px) {
+  .tally-popup,
+  iframe[src*="tally.so"] {
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+  }
+}
