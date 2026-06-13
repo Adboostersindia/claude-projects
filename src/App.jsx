@@ -7,10 +7,11 @@ import FAQSection from './components/FAQSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
 import StickyCTA from './components/StickyCTA'
+import { FormModalProvider } from './components/FormModal'
 
 export default function App() {
   return (
-    <>
+    <FormModalProvider>
       <Hero />
       <WhatSection />
       <WhySection />
@@ -20,6 +21,6 @@ export default function App() {
       <CTASection />
       <Footer />
       <StickyCTA />
-    </>
+    </FormModalProvider>
   )
 }

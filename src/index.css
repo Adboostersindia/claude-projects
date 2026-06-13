@@ -31,21 +31,3 @@ body {
 a { text-decoration: none; }
 
 ul { list-style: none; }
-
-/* Tally popup background override */
-.tally-popup,
-#tally-open-popup,
-[class*="tally"] iframe,
-iframe[src*="tally.so"] {
-  background: #050114 !important;
-  background-color: #050114 !important;
-}
-
-/* Cap Tally popup to the viewport on mobile so it scrolls internally instead of the page */
-@media (max-width: 768px) {
-  .tally-popup,
-  iframe[src*="tally.so"] {
-    max-height: 100dvh !important;
-    overflow-y: auto !important;
-  }
-}
