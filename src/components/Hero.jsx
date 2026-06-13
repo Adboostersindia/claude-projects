@@ -1,6 +1,8 @@
 import './Hero.css'
+import { useFormModal } from './FormModal'
 
 export default function Hero() {
+  const openForm = useFormModal()
   return (
     <section className="hero">
       <div className="hero-inner">
@@ -32,7 +34,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <a href="#" className="btn-primary" data-tally-open="pbvGz8" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="0">Book Your Ad Launch Session &nbsp;→</a>
+          <button className="btn-primary" onClick={openForm}>Book Your Ad Launch Session &nbsp;→</button>
 
           <div className="trust-badges">
             <span><span className="check">✓</span> Limited Slots</span>

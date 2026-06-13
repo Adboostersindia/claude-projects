@@ -8,7 +8,7 @@ export default function WhySection() {
           <h3>Why Work With Me?</h3>
           <ul>
             <li><span className="check">✓</span> 5+ Years of Paid Ads Experience</li>
-            <li><span className="check">✓</span> Managed 100+ Successful Campaigns</li>
+            <li><span className="check">✓</span> Managed 500+ Successful Campaigns</li>
             <li><span className="check">✓</span> Google &amp; Meta Ads Expert</li>
             <li><span className="check">✓</span> ROI-Focused Strategies</li>
             <li><span className="check">✓</span> Real Business Results, Not Just Theory</li>

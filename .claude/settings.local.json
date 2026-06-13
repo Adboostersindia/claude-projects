@@ -3,7 +3,13 @@
     "allow": [
       "PowerShell(Get-ChildItem \"D:\\\\winget install --id GitHub.cli\" -ErrorAction SilentlyContinue; Write-Host \"---\"; Test-Path \"C:\\\\Users\\\\Manuj\\\\AppData\\\\Roaming\\\\GitHub CLI\\\\hosts.yml\"; Get-ChildItem \"$env:APPDATA\\\\GitHub CLI\" -ErrorAction SilentlyContinue)",
       "PowerShell(& \"D:\\\\winget install --id GitHub.cli\\\\gh.exe\" auth status 2>&1)",
-      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); vercel --version 2>&1; node --version 2>&1; npm --version 2>&1)"
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); vercel --version 2>&1; node --version 2>&1; npm --version 2>&1)",
+      "PowerShell(New-Item -ItemType Directory -Path \"D:\\\\Nitin\\\\Claude Projects\\\\Nishant Kirtan Landing Page\")",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell(\\(Get-Command node -ErrorAction SilentlyContinue\\).Source; \\(Get-Command python -ErrorAction SilentlyContinue\\).Source; \\(Get-Command npx -ErrorAction SilentlyContinue\\).Source)",
+      "PowerShell(gh repo clone Adboostersindia/YRT-By-Novara \"D:\\\\Nitin\\\\Claude Projects\\\\YRT-By-Novara\" 2>&1)",
+      "Bash(git add *)",
+      "PowerShell(cd \"D:\\\\Nitin\\\\Claude Projects\"; $msg = \"Auto-commit: $\\(Get-Date -Format 'yyyy-MM-dd HH:mm:ss'\\)\"; git commit -m $msg; git push origin dev; git checkout master; git merge dev; git push origin master; $env:PATH = [System.Environment]::GetEnvironmentVariable\\('PATH','Machine'\\) + ';' + [System.Environment]::GetEnvironmentVariable\\('PATH','User'\\); vercel --prod 2>&1; git checkout dev)"
     ]
   }
 }
