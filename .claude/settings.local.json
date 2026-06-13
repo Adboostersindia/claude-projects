@@ -7,7 +7,8 @@
       "PowerShell(New-Item -ItemType Directory -Path \"D:\\\\Nitin\\\\Claude Projects\\\\Nishant Kirtan Landing Page\")",
       "mcp__Claude_Preview__preview_start",
       "PowerShell(\\(Get-Command node -ErrorAction SilentlyContinue\\).Source; \\(Get-Command python -ErrorAction SilentlyContinue\\).Source; \\(Get-Command npx -ErrorAction SilentlyContinue\\).Source)",
-      "PowerShell(gh repo clone Adboostersindia/YRT-By-Novara \"D:\\\\Nitin\\\\Claude Projects\\\\YRT-By-Novara\" 2>&1)"
+      "PowerShell(gh repo clone Adboostersindia/YRT-By-Novara \"D:\\\\Nitin\\\\Claude Projects\\\\YRT-By-Novara\" 2>&1)",
+      "Bash(git add *)"
     ]
   }
 }
