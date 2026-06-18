@@ -21,7 +21,7 @@ export default function TestimonialSection() {
           </div>
 
           <div className="testimonial-video">
-            <wistia-player media-id="q40ojzaeei" aspect="0.5625"></wistia-player>
+            <wistia-player media-id="0j6udbmja8" aspect="0.8"></wistia-player>
           </div>
         </div>
       </div>
