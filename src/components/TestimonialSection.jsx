@@ -10,13 +10,11 @@ export default function TestimonialSection() {
           <div className="testimonial-text">
             <div className="stars">★★★★★</div>
             <p className="quote">
-              "This session completely changed how I run my ads. We went from guessing to having a clear,
-              structured campaign live by the end of the call. Within weeks I started seeing better leads
-              at a lower cost — exactly what I needed for my business."
+              "I wanted to generate leads but didn't want to spend heavily on a marketing agency. So I joined Nitin's 'Launch With Me' session. In just one session, I successfully launched my first Meta Ads campaign and felt confident managing my ads on my own. Nitin guided me step-by-step — from setting up the ad account to campaign strategy and launching the campaign. I implemented everything myself while he coached me throughout the process. The hands-on approach made learning easy and practical. If you're a small business owner looking to generate leads while keeping marketing costs under control, I highly recommend the Launch With Me session."
             </p>
             <div className="author">
-              <div className="author-name">Client Name</div>
-              <div className="author-role">Business Owner</div>
+              <div className="author-name">Prateek</div>
+              <div className="author-role">Small Business Owner</div>
             </div>
           </div>
 
