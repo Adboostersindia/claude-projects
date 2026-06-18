@@ -21,10 +21,7 @@ export default function TestimonialSection() {
           </div>
 
           <div className="testimonial-video">
-            <div className="video-placeholder">
-              <div className="play-icon">▶</div>
-              <p>Video testimonial coming soon</p>
-            </div>
+            <wistia-player media-id="q40ojzaeei" aspect="0.5625"></wistia-player>
           </div>
         </div>
       </div>
