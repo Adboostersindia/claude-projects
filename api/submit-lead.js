@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Name, email and phone are required' })
   }
 
-  const scriptUrl = process.env.GOOGLE_SCRIPT_URL
+  const scriptUrl = (process.env.GOOGLE_SCRIPT_URL || '').trim().replace(/^﻿/, '')
   if (!scriptUrl) {
     console.error('submit-lead error: GOOGLE_SCRIPT_URL is not set')
     return res.status(500).json({ error: 'Form is not configured yet' })
