@@ -103,6 +103,17 @@
   transform: translateY(-1px);
 }
 
+.ty-link {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.88rem;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ty-link:hover { color: #a78bfa; }
+
 .ty-testimonials {
   max-width: 860px;
   margin: 48px auto 0;
