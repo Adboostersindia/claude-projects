@@ -5,7 +5,7 @@ const written = [
   {
     quote: "I wanted to generate leads but didn't want to spend heavily on a marketing agency. So I joined Nitin's 'Launch With Me' session. In just one session, I successfully launched my first Meta Ads campaign and felt confident managing my ads on my own. Nitin guided me step-by-step — from setting up the ad account to campaign strategy and launching the campaign. I implemented everything myself while he coached me throughout the process. The hands-on approach made learning easy and practical. If you're a small business owner looking to generate leads while keeping marketing costs under control, I highly recommend the Launch With Me session.",
     name: 'Prateek',
-    role: 'Small Business Owner',
+    role: 'Saffroponic Founder',
   },
   {
     quote: "I had already spent over ₹45,000 on three different courses before joining Nitin's Launch With Me session. Honestly, it was the best decision I made. He helped me identify problems in my setup, shared new strategies, and gave me clarity on lead quality and ad performance. It wasn't theory — it was practical, hands-on guidance for my business. Today, I manage my own ads with confidence, and Nitin continues to support my marketing and website needs.",
