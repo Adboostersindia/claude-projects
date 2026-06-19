@@ -19,6 +19,7 @@ export default async function handler(req, res) {
     const response = await fetch(scriptUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      redirect: 'follow',
       body: JSON.stringify({
         timestamp: new Date().toISOString(),
         name,
@@ -29,7 +30,11 @@ export default async function handler(req, res) {
       }),
     })
 
-    if (!response.ok) throw new Error(`Script responded with ${response.status}`)
+    // Google Apps Script may return 302 redirect — treat any response as success
+    // since the script has already processed the data by the time it redirects
+    if (!response.ok && response.status !== 302) {
+      throw new Error(`Script responded with ${response.status}`)
+    }
 
     return res.status(200).json({ ok: true })
   } catch (err) {
