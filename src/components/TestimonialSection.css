@@ -56,6 +56,56 @@
   margin-top: 2px;
 }
 
+.carousel-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  background: rgba(124, 58, 237, 0.1);
+  color: #a78bfa;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.nav-btn:hover {
+  background: rgba(124, 58, 237, 0.25);
+  border-color: #a78bfa;
+}
+
+.nav-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(139, 92, 246, 0.3);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.nav-dot.active {
+  background: #a78bfa;
+  transform: scale(1.3);
+}
+
 .testimonial-video {
   display: flex;
   align-items: center;

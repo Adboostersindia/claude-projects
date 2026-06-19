@@ -26,8 +26,10 @@ export default function ThankYou() {
             <span>We launch your ads together in a live 1:1 session</span>
           </div>
         </div>
-        <a href="/" className="ty-btn">← Back to Homepage</a>
-        <a href="https://adboosters.in" className="ty-link" target="_blank" rel="noopener noreferrer">Visit AdBoosters.in ↗</a>
+        <div className="ty-actions">
+          <a href="/" className="ty-btn">← Back to Homepage</a>
+          <a href="https://adboosters.in" className="ty-btn ty-btn-outline" target="_blank" rel="noopener noreferrer">Visit AdBoosters.in ↗</a>
+        </div>
       </div>
 
       <div className="ty-testimonials">
