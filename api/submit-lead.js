@@ -30,15 +30,16 @@ export default async function handler(req, res) {
       }),
     })
 
-    // Google Apps Script may return 302 redirect — treat any response as success
-    // since the script has already processed the data by the time it redirects
+    const text = await response.text().catch(() => '')
+    console.log('submit-lead script response:', response.status, text)
+
     if (!response.ok && response.status !== 302) {
-      throw new Error(`Script responded with ${response.status}`)
+      throw new Error(`Script responded with ${response.status}: ${text}`)
     }
 
     return res.status(200).json({ ok: true })
   } catch (err) {
-    console.error('submit-lead error:', err)
-    return res.status(500).json({ error: 'Failed to save lead' })
+    console.error('submit-lead error:', err.message || err)
+    return res.status(500).json({ error: 'Failed to save lead', detail: err.message })
   }
 }
