@@ -27,6 +27,7 @@ export default function ThankYou() {
           </div>
         </div>
         <a href="/" className="ty-btn">← Back to Homepage</a>
+        <a href="https://adboosters.in" className="ty-link" target="_blank" rel="noopener noreferrer">Visit AdBoosters.in ↗</a>
       </div>
 
       <div className="ty-testimonials">
