@@ -103,7 +103,43 @@
   transform: translateY(-1px);
 }
 
+.ty-testimonials {
+  max-width: 860px;
+  margin: 48px auto 0;
+  padding: 0 24px 60px;
+  text-align: center;
+}
+
+.ty-testimonials h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.ty-testimonials .purple { color: #a78bfa; }
+
+.ty-videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ty-video-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 32px rgba(124, 58, 237, 0.2);
+  outline: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.ty-video-wrap wistia-player {
+  width: 100%;
+  display: block;
+}
+
 @media (max-width: 600px) {
   .ty-card { padding: 36px 24px; }
   .ty-card h1 { font-size: 1.8rem; }
+  .ty-videos { grid-template-columns: 1fr; }
 }

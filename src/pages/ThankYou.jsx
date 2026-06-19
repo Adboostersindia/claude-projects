@@ -28,6 +28,18 @@ export default function ThankYou() {
         </div>
         <a href="/" className="ty-btn">← Back to Homepage</a>
       </div>
+
+      <div className="ty-testimonials">
+        <h2>Hear From <span className="purple">Our Clients</span></h2>
+        <div className="ty-videos">
+          <div className="ty-video-wrap">
+            <wistia-player media-id="0j6udbmja8" aspect="0.8"></wistia-player>
+          </div>
+          <div className="ty-video-wrap">
+            <wistia-player media-id="1jkqb6hgz7" aspect="0.8"></wistia-player>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
