@@ -1,0 +1,113 @@
+.founder-section {
+  padding: 80px 0;
+  background: #050114;
+  border-top: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.founder-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.founder-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.founder-photo {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  box-shadow: 0 0 48px rgba(124, 58, 237, 0.2);
+}
+
+.founder-photo-placeholder {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 3/4;
+  border-radius: 20px;
+  border: 2px dashed rgba(139, 92, 246, 0.4);
+  background: rgba(124, 58, 237, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.founder-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #a78bfa;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 20px;
+  padding: 5px 14px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.founder-content h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 24px;
+  line-height: 1.25;
+}
+
+.founder-content .purple { color: #a78bfa; }
+
+.founder-content p {
+  font-size: 0.97rem;
+  color: #d1d5db;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.founder-name {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.founder-name strong {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.founder-name span {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  .founder-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .founder-photo-wrap { order: -1; }
+  .founder-photo,
+  .founder-photo-placeholder {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .founder-section { padding: 56px 0; }
+}
