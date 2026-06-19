@@ -2,10 +2,18 @@
   min-height: 100vh;
   background: #050114;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 40px 24px 60px;
+}
+
+.ty-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  max-width: 1100px;
+  width: 100%;
 }
 
 .ty-card {
@@ -13,7 +21,6 @@
   border: 1px solid rgba(139, 92, 246, 0.25);
   border-radius: 20px;
   padding: 52px 44px;
-  max-width: 560px;
   width: 100%;
   text-align: center;
   box-shadow: 0 0 60px rgba(124, 58, 237, 0.12);
@@ -128,9 +135,6 @@
 }
 
 .ty-testimonials {
-  max-width: 860px;
-  margin: 48px auto 0;
-  padding: 0 24px 60px;
   text-align: center;
 }
 
@@ -146,7 +150,7 @@
 
 .ty-videos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -162,8 +166,12 @@
   display: block;
 }
 
-@media (max-width: 600px) {
-  .ty-page { padding: 24px 16px 60px; }
+@media (max-width: 768px) {
+  .ty-page { padding: 24px 16px 60px; align-items: flex-start; }
+  .ty-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
   .ty-card {
     padding: 32px 20px;
     border-radius: 16px;
@@ -172,7 +180,5 @@
   .ty-icon { width: 56px; height: 56px; font-size: 1.5rem; }
   .ty-steps { gap: 10px; }
   .ty-step { font-size: 0.85rem; gap: 10px; }
-  .ty-videos { grid-template-columns: 1fr; }
-  .ty-testimonials { padding: 0 0 40px; }
   .ty-testimonials h2 { font-size: 1.3rem; margin-bottom: 20px; }
 }
