@@ -2,9 +2,10 @@
   min-height: 100vh;
   background: #050114;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 40px 24px;
+  justify-content: flex-start;
+  padding: 40px 24px 60px;
 }
 
 .ty-card {
@@ -84,18 +85,29 @@
   flex-shrink: 0;
 }
 
+.ty-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 4px;
+}
+
 .ty-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   background: #7c3aed;
   color: #fff;
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 0.95rem;
-  padding: 12px 28px;
+  padding: 13px 28px;
   border-radius: 8px;
   text-decoration: none;
   transition: background 0.2s, transform 0.2s;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ty-btn:hover {
@@ -103,16 +115,17 @@
   transform: translateY(-1px);
 }
 
-.ty-link {
-  display: block;
-  margin-top: 14px;
-  font-size: 0.88rem;
-  color: #9ca3af;
-  text-decoration: none;
-  transition: color 0.2s;
+.ty-btn-outline {
+  background: transparent;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  color: #a78bfa;
 }
 
-.ty-link:hover { color: #a78bfa; }
+.ty-btn-outline:hover {
+  background: rgba(124, 58, 237, 0.1);
+  border-color: #a78bfa;
+  transform: translateY(-1px);
+}
 
 .ty-testimonials {
   max-width: 860px;
@@ -150,7 +163,16 @@
 }
 
 @media (max-width: 600px) {
-  .ty-card { padding: 36px 24px; }
+  .ty-page { padding: 24px 16px 60px; }
+  .ty-card {
+    padding: 32px 20px;
+    border-radius: 16px;
+  }
   .ty-card h1 { font-size: 1.8rem; }
+  .ty-icon { width: 56px; height: 56px; font-size: 1.5rem; }
+  .ty-steps { gap: 10px; }
+  .ty-step { font-size: 0.85rem; gap: 10px; }
   .ty-videos { grid-template-columns: 1fr; }
+  .ty-testimonials { padding: 0 0 40px; }
+  .ty-testimonials h2 { font-size: 1.3rem; margin-bottom: 20px; }
 }
