@@ -3,7 +3,7 @@ import './LeadForm.css'
 
 export default function LeadForm({ onSuccess }) {
   const [form, setForm] = useState({ name: '', email: '', phone: '', business: '', message: '' })
-  const [status, setStatus] = useState('idle') // idle | submitting | success | error
+  const [status, setStatus] = useState('idle')
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
@@ -19,21 +19,11 @@ export default function LeadForm({ onSuccess }) {
         body: JSON.stringify(form),
       })
       if (!res.ok) throw new Error('Request failed')
-      setStatus('success')
       if (onSuccess) onSuccess()
+      window.location.href = '/thank-you.html'
     } catch {
       setStatus('error')
     }
-  }
-
-  if (status === 'success') {
-    return (
-      <div className="lead-form-success">
-        <div className="success-icon">✓</div>
-        <h3>Thank you!</h3>
-        <p>Your application has been received. I'll reach out to you shortly.</p>
-      </div>
-    )
   }
 
   return (

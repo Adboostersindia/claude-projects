@@ -18,11 +18,12 @@
 
 .testimonial-grid {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
 }
 
+/* Left — written review */
 .testimonial-text {
   background: #10102a;
   border: 1px solid rgba(139, 92, 246, 0.2);
@@ -38,7 +39,7 @@
 }
 
 .quote {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #d1d5db;
   line-height: 1.8;
   margin-bottom: 24px;
@@ -56,21 +57,30 @@
   margin-top: 2px;
 }
 
-.testimonial-video {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+/* Right — two videos side by side */
+.testimonial-videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
-wistia-player {
-  width: 100%;
-  max-width: 380px;
+.video-wrap {
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 0 40px rgba(124, 58, 237, 0.25);
+  box-shadow: 0 0 32px rgba(124, 58, 237, 0.2);
   outline: 1px solid rgba(139, 92, 246, 0.3);
 }
 
-@media (max-width: 768px) {
-  .testimonial-grid { grid-template-columns: 1fr; gap: 16px; }
+.video-wrap wistia-player {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .testimonial-grid { grid-template-columns: 1fr; gap: 32px; }
+  .testimonial-videos { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .testimonial-videos { grid-template-columns: 1fr; }
 }
