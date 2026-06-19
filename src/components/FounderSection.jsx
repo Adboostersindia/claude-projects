@@ -6,9 +6,7 @@ export default function FounderSection() {
       <div className="container">
         <div className="founder-grid">
           <div className="founder-photo-wrap">
-            <div className="founder-photo-placeholder">
-              <span>Add your photo here</span>
-            </div>
+            <img src="/herosection.png" alt="Nitin - Founder, AdBoosters" className="founder-photo" />
           </div>
           <div className="founder-content">
             <div className="founder-badge">About The Founder</div>
