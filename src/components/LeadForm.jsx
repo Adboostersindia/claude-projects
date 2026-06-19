@@ -20,7 +20,7 @@ export default function LeadForm({ onSuccess }) {
       })
       if (!res.ok) throw new Error('Request failed')
       if (onSuccess) onSuccess()
-      window.location.href = '/thank-you.html'
+      window.location.href = '/thank-you'
     } catch {
       setStatus('error')
     }
