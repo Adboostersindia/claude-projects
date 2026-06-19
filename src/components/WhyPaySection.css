@@ -1,0 +1,42 @@
+.why-pay-section {
+  padding: 80px 0;
+  background: #050114;
+  border-top: 1px solid rgba(139, 92, 246, 0.2);
+  text-align: center;
+}
+
+.why-pay-section .container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.why-pay-section h2 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.why-pay-section .purple { color: #a78bfa; }
+
+.why-pay-lead {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #a78bfa;
+  margin-bottom: 20px;
+}
+
+.why-pay-body {
+  font-size: 1rem;
+  color: #d1d5db;
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+
+@media (max-width: 768px) {
+  .why-pay-section { padding: 56px 0; }
+  .why-pay-section h2 { font-size: 1.4rem; }
+  .why-pay-body { font-size: 0.95rem; }
+}
