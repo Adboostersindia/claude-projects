@@ -11,8 +11,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: start;
-  max-width: 1100px;
+  align-items: center;
+  max-width: 1000px;
   width: 100%;
 }
 
@@ -181,4 +181,5 @@
   .ty-steps { gap: 10px; }
   .ty-step { font-size: 0.85rem; gap: 10px; }
   .ty-testimonials h2 { font-size: 1.3rem; margin-bottom: 20px; }
+  .ty-videos { grid-template-columns: 1fr; gap: 16px; }
 }
