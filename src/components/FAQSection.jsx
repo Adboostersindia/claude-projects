@@ -19,10 +19,6 @@ const faqs = [
     a: 'Yes. The session can focus on either platform, or both, based on your business goals.'
   },
   {
-    q: 'How long is the session?',
-    a: 'Typically 2 hours. We use every minute to set up, strategise, and launch your campaign.'
-  },
-  {
     q: 'What budget should I have?',
     a: 'Most businesses should be prepared to spend at least ₹15,000 – ₹50,000/month on advertising to see meaningful results.'
   },
@@ -49,10 +45,6 @@ const faqs = [
   {
     q: 'What industries do you work with?',
     a: 'I\'ve worked with businesses across multiple industries, including local services, healthcare, e-commerce, education, and lead generation businesses.'
-  },
-  {
-    q: 'Will I get a recording of the session?',
-    a: 'Yes, you\'ll receive a recording so you can revisit the strategies and implementation steps anytime.'
   },
   {
     q: 'What happens after the session?',
