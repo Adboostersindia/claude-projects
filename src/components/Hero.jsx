@@ -13,6 +13,7 @@ export default function Hero() {
           <p className="hero-sub">
             A 1:1 private session to launch high-converting Google &amp; Meta Ads that bring <span className="purple">real results.</span>
           </p>
+          <p className="hero-note">I personally conduct every session and only take 4–6 sessions per month.</p>
         </div>
 
         <div className="hero-actions">

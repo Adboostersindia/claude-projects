@@ -14,6 +14,7 @@ export default function HeroV2() {
           <p className="hero-sub">
             Never Run Google or Meta Ads Before? Or Feeling Stuck With Your Current Campaigns?
           </p>
+          <p className="hero-note">I personally conduct every session and only take 4–6 sessions per month.</p>
         </div>
 
         <div className="hero-actions">

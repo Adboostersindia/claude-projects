@@ -66,6 +66,14 @@ const faqs = [
     q: 'Do I need ad creatives before the session?',
     a: 'Not necessarily. If you already have creatives, we\'ll review them. If not, I\'ll guide you on what types of creatives and messaging are most likely to perform well.'
   },
+  {
+    q: 'Why Should I Pay ₹10,000 When There Are Free YouTube Videos And Courses?',
+    a: 'You absolutely can learn from YouTube and courses—I did too. The challenge is that most content is generic, while your business is unique. This session is about applying the right strategy to your business, avoiding costly mistakes, and getting answers to your specific questions in real time. Many of my clients had already spent money on courses before joining. What they needed wasn\'t more information—they needed clarity and direction.'
+  },
+  {
+    q: 'Who This Is NOT For',
+    a: 'If you\'re looking for a free webinar, a quick fix, or someone to magically grow your business overnight, this session isn\'t for you. It\'s designed for business owners who are ready to invest in learning, take action, and make informed marketing decisions that drive long-term growth.'
+  },
 ]
 
 export default function FAQSection() {
