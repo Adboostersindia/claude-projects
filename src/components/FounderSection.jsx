@@ -30,6 +30,7 @@ export default function FounderSection() {
             <div className="founder-name">
               <strong>Nitin</strong>
               <span>Founder, AdBoosters</span>
+              <span className="founder-languages">Speaks English, Hindi &amp; Tamil</span>
             </div>
           </div>
         </div>

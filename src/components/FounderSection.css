@@ -120,6 +120,12 @@
   color: #9ca3af;
 }
 
+.founder-languages {
+  color: #a78bfa !important;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
 @media (max-width: 768px) {
   .founder-grid {
     grid-template-columns: 1fr;

@@ -66,6 +66,10 @@ const faqs = [
     q: 'What happens after the session?',
     a: 'You\'ll leave with a clear roadmap and action plan. If you need ongoing support, we can discuss additional options after the session.'
   },
+  {
+    q: 'What languages can we communicate in?',
+    a: 'English, Hindi & Tamil. Feel free to communicate in whichever language you\'re most comfortable with during the session.'
+  },
 ]
 
 export default function FAQSection() {
