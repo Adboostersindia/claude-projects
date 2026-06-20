@@ -21,6 +21,11 @@ export function FormModalProvider({ children }) {
             <h3>Launch Your <span className="purple">Ads With Me</span></h3>
             <p className="form-modal-sub">Complete the application below. I'll reach out shortly.</p>
             <LeadForm onSuccess={() => setTimeout(() => setOpen(false), 2000)} />
+            <div className="form-trust">
+              <span><span className="check">✓</span> Sessions available in English, Hindi &amp; Tamil</span>
+              <span><span className="check">✓</span> I'll personally review every application</span>
+              <span><span className="check">✓</span> No spam. No sales pressure.</span>
+            </div>
           </div>
         </div>
       )}

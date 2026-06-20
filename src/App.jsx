@@ -1,8 +1,8 @@
 import Hero from './components/Hero'
 import WhatSection from './components/WhatSection'
-import WhySection from './components/WhySection'
 import DifferentSection from './components/DifferentSection'
 import TestimonialSection from './components/TestimonialSection'
+import FounderSection from './components/FounderSection'
 import FAQSection from './components/FAQSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
@@ -14,9 +14,9 @@ export default function App() {
     <FormModalProvider>
       <Hero />
       <WhatSection />
-      <WhySection />
       <DifferentSection />
       <TestimonialSection />
+      <FounderSection />
       <FAQSection />
       <CTASection />
       <Footer />

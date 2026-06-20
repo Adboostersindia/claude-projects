@@ -80,6 +80,28 @@
   margin-bottom: 16px;
 }
 
+.founder-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.founder-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.founder-highlights .check {
+  color: #a78bfa;
+  font-weight: 700;
+}
+
 .founder-name {
   margin-top: 28px;
   display: flex;
@@ -96,6 +118,12 @@
 .founder-name span {
   font-size: 0.85rem;
   color: #9ca3af;
+}
+
+.founder-languages {
+  color: #a78bfa !important;
+  font-weight: 600;
+  margin-top: 2px;
 }
 
 @media (max-width: 768px) {

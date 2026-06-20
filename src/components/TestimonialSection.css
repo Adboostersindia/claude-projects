@@ -37,11 +37,34 @@
   margin-bottom: 16px;
 }
 
+.testimonial-headline {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
 .quote {
   font-size: 0.95rem;
   color: #d1d5db;
   line-height: 1.8;
   margin-bottom: 24px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(139, 92, 246, 0.4);
+  flex-shrink: 0;
 }
 
 .author-name {

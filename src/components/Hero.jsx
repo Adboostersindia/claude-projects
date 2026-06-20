@@ -13,6 +13,7 @@ export default function Hero() {
           <p className="hero-sub">
             A 1:1 private session to launch high-converting Google &amp; Meta Ads that bring <span className="purple">real results.</span>
           </p>
+          <p className="hero-note">I personally conduct every session and only take 4–6 sessions per month.</p>
         </div>
 
         <div className="hero-actions">
@@ -53,6 +54,7 @@ export default function Hero() {
               <div className="price-amount">₹10,000</div>
               <div className="price-detail">1:1 Private Session</div>
               <div className="price-detail">2 Hours</div>
+              <div className="price-note">One-time investment. No monthly commitment.</div>
             </div>
           </div>
           {/* Desktop cards column */}
@@ -62,6 +64,7 @@ export default function Hero() {
               <div className="price-amount">₹10,000</div>
               <div className="price-detail">1:1 Private Session</div>
               <div className="price-detail">2 Hours</div>
+              <div className="price-note">One-time investment. No monthly commitment.</div>
             </div>
             <div className="who-card">
               <h3>👥 Who Is This For?</h3>

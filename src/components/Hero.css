@@ -49,7 +49,15 @@ h1 {
 .hero-sub {
   color: #9ca3af;
   font-size: 1rem;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
+  max-width: 460px;
+}
+
+.hero-note {
+  color: #a78bfa;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 28px;
   max-width: 460px;
 }
 
@@ -202,6 +210,15 @@ h1 {
 .price-detail {
   font-size: 0.78rem;
   color: #9ca3af;
+}
+
+.price-note {
+  font-size: 0.7rem;
+  color: #a78bfa;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(139, 92, 246, 0.2);
+  line-height: 1.4;
 }
 
 /* Who Card */
