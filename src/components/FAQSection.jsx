@@ -7,6 +7,10 @@ const faqs = [
     a: 'You absolutely can learn from YouTube and courses—I did too. The challenge is that most content is generic, while your business is unique. This session is about applying the right strategy to your business, avoiding costly mistakes, and getting answers to your specific questions in real time. Many of my clients had already spent money on courses before joining. What they needed wasn\'t more information—they needed clarity and direction.'
   },
   {
+    q: 'Who Is This For?',
+    a: 'This session is for business owners who want to understand advertising and make smarter marketing decisions. Whether you\'ve never run Google or Meta Ads before, have taken courses but still feel stuck, are unsure if your current ads or agency are delivering results, or simply want clarity before spending more money, this session will help you move forward with confidence. It\'s designed for those who want to grow their business without being completely dependent on an agency.'
+  },
+  {
     q: 'Who This Is NOT For',
     a: 'If you\'re looking for a free webinar, a quick fix, or someone to magically grow your business overnight, this session isn\'t for you. It\'s designed for business owners who are ready to invest in learning, take action, and make informed marketing decisions that drive long-term growth.'
   },
