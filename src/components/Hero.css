@@ -212,6 +212,15 @@ h1 {
   color: #9ca3af;
 }
 
+.price-note {
+  font-size: 0.7rem;
+  color: #a78bfa;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(139, 92, 246, 0.2);
+  line-height: 1.4;
+}
+
 /* Who Card */
 .who-card {
   background: rgba(10, 5, 30, 0.85);

@@ -69,6 +69,12 @@
   color: #9ca3af;
 }
 
+.cta-price-note {
+  font-size: 0.8rem;
+  color: #a78bfa;
+  margin-top: 8px;
+}
+
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -104,6 +110,23 @@
   color: #fff;
   margin-bottom: 16px;
   line-height: 1.5;
+}
+
+.form-trust {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+.form-trust span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #9ca3af;
 }
 
 /* Responsive */

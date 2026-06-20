@@ -54,6 +54,7 @@ export default function HeroV2() {
               <div className="price-amount">₹10,000</div>
               <div className="price-detail">1:1 Private Session</div>
               <div className="price-detail">2 Hours</div>
+              <div className="price-note">One-time investment. No monthly commitment.</div>
             </div>
           </div>
           <div className="desktop-cards">
@@ -62,6 +63,7 @@ export default function HeroV2() {
               <div className="price-amount">₹10,000</div>
               <div className="price-detail">1:1 Private Session</div>
               <div className="price-detail">2 Hours</div>
+              <div className="price-note">One-time investment. No monthly commitment.</div>
             </div>
             <div className="who-card">
               <h3>👥 Who Is This For?</h3>
