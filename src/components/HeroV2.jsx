@@ -10,32 +10,17 @@ export default function HeroV2() {
 
         <div className="hero-left">
           <div className="badge">✦ 1:1 DONE-WITH-YOU SESSION</div>
-          <h1>Launch Your First Profitable<br /><span className="purple">Google &amp; Meta Ads</span><br />Campaign In Just 2 Hours</h1>
-          <p className="hero-sub">
+          <p className="hero-eyebrow">
             Never Run Google or Meta Ads Before? Or Feeling Stuck With Your Current Campaigns?
+          </p>
+          <h1>Launch Your First <span className="purple">Google &amp; Meta Ads</span> Campaign With A Clear Strategy For Growth</h1>
+          <p className="hero-sub">
+            Get personalized 1:1 guidance to avoid costly mistakes, understand what works for your business, and launch with a clear plan.
           </p>
           <p className="hero-note">I personally conduct every session and only take 4–6 sessions per month.</p>
         </div>
 
         <div className="hero-actions">
-          <div className="hero-features">
-            <div className="feature-item">
-              <div className="feature-icon"><img src="/icon1.png" alt="Strategic Setup" /></div>
-              <strong>Strategic Setup</strong>
-              <p>We build the right foundation.</p>
-            </div>
-            <div className="feature-item">
-              <div className="feature-icon"><img src="/icon2.png" alt="Laser Targeting" /></div>
-              <strong>Laser Targeting</strong>
-              <p>Reach the right people who are ready to buy.</p>
-            </div>
-            <div className="feature-item">
-              <div className="feature-icon"><img src="/icon3.png" alt="Better Results" /></div>
-              <strong>Better Results</strong>
-              <p>More leads, lower cost &amp; higher ROI.</p>
-            </div>
-          </div>
-
           <button className="btn-primary" onClick={openForm}>Book Your Ad Launch Session &nbsp;→</button>
 
           <div className="trust-badges">

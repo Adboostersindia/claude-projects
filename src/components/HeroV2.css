@@ -1,3 +1,11 @@
+.hero-eyebrow {
+  color: #a78bfa;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  max-width: 460px;
+}
+
 @media (min-width: 769px) {
   .hero-v2 {
     min-height: 100vh;
@@ -28,27 +36,9 @@
     margin-bottom: 16px;
   }
 
-  .hero-v2 .hero-features {
-    gap: 16px;
-    margin-bottom: 18px;
-  }
-
-  .hero-v2 .feature-icon {
-    width: 44px;
-    height: 44px;
-  }
-
-  .hero-v2 .feature-icon img {
-    width: 44px;
-    height: 44px;
-  }
-
-  .hero-v2 .feature-item strong {
+  .hero-v2 .hero-eyebrow {
     font-size: 0.85rem;
-  }
-
-  .hero-v2 .feature-item p {
-    font-size: 0.74rem;
+    margin-bottom: 10px;
   }
 
   .hero-v2 .btn-primary {
