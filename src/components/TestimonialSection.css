@@ -37,6 +37,14 @@
   margin-bottom: 16px;
 }
 
+.testimonial-headline {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
 .quote {
   font-size: 0.95rem;
   color: #d1d5db;
