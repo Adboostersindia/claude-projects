@@ -1,10 +1,11 @@
 import './Hero.css'
+import './HeroV2.css'
 import { useFormModal } from './FormModal'
 
 export default function HeroV2() {
   const openForm = useFormModal()
   return (
-    <section className="hero">
+    <section className="hero hero-v2">
       <div className="hero-inner">
 
         <div className="hero-left">
