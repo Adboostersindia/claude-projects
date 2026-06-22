@@ -38,6 +38,9 @@ function doPost(e) {
       sheet.getRange(1, 1, 1, headers.length).setFontWeight('bold');
     }
 
+    // Force the Phone column (column 4) to plain text so "+91..." isn't read as a formula
+    sheet.getRange(1, 4, sheet.getMaxRows(), 1).setNumberFormat('@');
+
     sheet.appendRow([
       new Date(),
       data.name || '',
