@@ -29,7 +29,7 @@ if (nav) {
 
 // Booking form → Google Sheet (Apps Script Web App)
 // Paste your deployed Web app URL between the quotes below.
-const SHEET_ENDPOINT = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+const SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxMK1jNi5wtu-G6nKUPgiJ64NNXd6Smh_yxsoTUjKitSv-lOWtad32ucv8Rq7osiis0/exec';
 
 const bookingForm = document.getElementById('bookingForm');
 if (bookingForm) {
