@@ -19,8 +19,26 @@ setInterval(() => {
 
 // Sticky nav shadow on scroll
 const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-  nav.style.boxShadow = window.scrollY > 10
-    ? '0 4px 24px rgba(0,0,0,0.4)'
-    : 'none';
-});
+if (nav) {
+  window.addEventListener('scroll', () => {
+    nav.style.boxShadow = window.scrollY > 10
+      ? '0 4px 24px rgba(0,0,0,0.4)'
+      : 'none';
+  });
+}
+
+// Booking form
+const bookingForm = document.getElementById('bookingForm');
+if (bookingForm) {
+  bookingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!bookingForm.checkValidity()) {
+      bookingForm.reportValidity();
+      return;
+    }
+    const success = document.getElementById('formSuccess');
+    success.classList.add('show');
+    bookingForm.reset();
+    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+}
