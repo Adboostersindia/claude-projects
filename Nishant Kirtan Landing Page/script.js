@@ -27,18 +27,44 @@ if (nav) {
   });
 }
 
-// Booking form
+// Booking form → Google Sheet (Apps Script Web App)
+// Paste your deployed Web app URL between the quotes below.
+const SHEET_ENDPOINT = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+
 const bookingForm = document.getElementById('bookingForm');
 if (bookingForm) {
-  bookingForm.addEventListener('submit', (e) => {
+  bookingForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!bookingForm.checkValidity()) {
       bookingForm.reportValidity();
       return;
     }
+
+    const submitBtn = bookingForm.querySelector('.form-submit');
     const success = document.getElementById('formSuccess');
-    success.classList.add('show');
-    bookingForm.reset();
-    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const original = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting…';
+
+    const data = Object.fromEntries(new FormData(bookingForm).entries());
+
+    try {
+      if (SHEET_ENDPOINT.startsWith('http')) {
+        await fetch(SHEET_ENDPOINT, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(data)
+        });
+      }
+      success.classList.add('show');
+      bookingForm.reset();
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } catch (err) {
+      alert('Sorry, something went wrong. Please try again or contact us directly.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = original;
+    }
   });
 }
