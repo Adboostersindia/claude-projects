@@ -906,10 +906,34 @@ body {
 
 @media (max-width: 900px) {
   .nav { padding: 14px 24px; }
-  .hero { grid-template-columns: 1fr; padding: 48px 24px 60px; min-height: auto; }
-  .hero-content { max-width: 100%; }
-  .hero-image-wrap { display: none; }
+
+  /* Hero → single column, image on top */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    padding: 24px 22px 48px;
+    min-height: auto;
+    gap: 0;
+  }
+  .hero-content { max-width: 100%; order: 2; position: relative; z-index: 2; }
+  .hero-image-wrap {
+    display: block;
+    order: 1;
+    position: relative;
+    width: 100vw;
+    margin-left: -22px;
+    height: 360px;
+    margin-bottom: 8px;
+  }
+  .hero-artist-img {
+    object-position: center 8%;
+    -webkit-mask-image: linear-gradient(to bottom, black 72%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 72%, transparent 100%);
+  }
+  .hero-quote-card { display: none; }
   .btn-hero { max-width: 100%; }
+
   .why-section { grid-template-columns: 1fr; }
   .why-image { min-height: 280px; }
   .why-book-section { grid-template-columns: 1fr; }
@@ -921,16 +945,31 @@ body {
 }
 
 @media (max-width: 640px) {
-  .hero { padding: 90px 20px 48px; }
+  .hero { padding: 16px 18px 44px; }
+  .hero-image-wrap { height: 300px; margin-left: -18px; width: 100vw; }
+  .hero-brand { gap: 12px; margin-bottom: 14px; }
+  .om-badge { width: 44px; height: 44px; font-size: 22px; }
+  .brand-tagline { font-size: 11px; letter-spacing: 1.5px; }
+  .hero-heading { font-size: clamp(32px, 9vw, 42px); }
+  .hero-sub { font-size: 15px; }
+  .hero-sub br { display: none; }
+
+  /* Stats → stacked rows on mobile */
+  .hero-stats {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 18px;
+  }
+  .hero-stats .stat-divider { display: none; }
+  .stat span br { display: none; }
+
   .why-content { padding: 40px 24px; }
   .why-book-content { padding: 40px 24px; }
-  .packages-section, .testimonials-section, .faq-section, .cta-section { padding: 56px 20px; }
+  .packages-section, .testimonials-section, .faq-section, .cta-section, .videos-section { padding: 48px 18px; }
   .booking-form { padding: 24px 18px; }
   .form-grid { grid-template-columns: 1fr; }
-  .faq-grid { grid-template-columns: 1fr 1fr; }
-  .hero-badges { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .badge-divider { display: none; }
-  .badge { padding: 0; }
+  .faq-grid { grid-template-columns: 1fr; }
   .why-points { grid-template-columns: 1fr; }
   .testimonials-track { flex-direction: column; }
   .testimonial-card { min-width: 100%; }
