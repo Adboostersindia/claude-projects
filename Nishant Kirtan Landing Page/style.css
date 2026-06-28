@@ -79,7 +79,7 @@ body {
 /* ── HERO ── */
 .hero {
   min-height: 100vh;
-  padding: 28px 0 28px 56px;
+  padding: 18px 0 18px 56px;
   display: grid;
   grid-template-columns: 1.05fr 1fr;
   gap: 40px;
@@ -107,7 +107,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .om-badge {
   width: 52px;
@@ -136,16 +136,16 @@ body {
   font-weight: 800;
   line-height: 1.05;
   color: var(--white);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
-.hero-divider { margin-bottom: 14px; }
+.hero-divider { margin-bottom: 10px; }
 .hero-divider svg { display: block; }
 
 .hero-sub {
   font-size: clamp(15px, 1.4vw, 18px);
   color: var(--text-light);
   line-height: 1.55;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 .hero-sub .gold-text { font-weight: 600; }
 
@@ -155,7 +155,7 @@ body {
   letter-spacing: 2px;
   color: var(--white);
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   padding-left: 12px;
   border-left: 3px solid var(--gold);
   line-height: 1.2;
@@ -166,7 +166,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 .hero-occasions li {
   display: inline-flex;
@@ -199,8 +199,8 @@ body {
   align-items: center;
   gap: 18px;
   flex-wrap: nowrap;
-  margin-bottom: 18px;
-  padding: 16px 20px;
+  margin-bottom: 10px;
+  padding: 12px 20px;
   border: 1px solid rgba(201,162,39,0.25);
   border-radius: 16px;
   background: rgba(255,255,255,0.02);
@@ -266,7 +266,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: 6px;
   font-size: 14px;
   color: var(--text-muted);
 }
@@ -987,6 +987,20 @@ body {
   .hero-heading { font-size: clamp(32px, 9vw, 42px); }
   .hero-sub { font-size: 15px; }
   .hero-sub br { display: none; }
+
+  /* Occasions → 2 per row on mobile */
+  .hero-occasions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .hero-occasions li {
+    white-space: normal;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
 
   /* Stats → stacked rows on mobile */
   .hero-stats {
