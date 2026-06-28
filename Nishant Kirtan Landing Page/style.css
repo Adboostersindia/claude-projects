@@ -431,6 +431,15 @@ body {
 }
 .package-featured .pkg-price { font-size: 42px; }
 .pkg-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+.pkg-duration {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.3px;
+  margin-top: 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(201,162,39,0.2);
+}
 
 .pkg-features {
   list-style: none;
