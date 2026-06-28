@@ -330,9 +330,10 @@ body {
 
 /* ── VIDEOS ── */
 .videos-section {
-  background: var(--dark);
+  background: #F5EFE0;
   padding: 80px 48px;
 }
+.videos-section .section-heading { color: #1a0800; }
 .videos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
