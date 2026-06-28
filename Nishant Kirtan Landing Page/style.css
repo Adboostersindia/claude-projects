@@ -191,6 +191,8 @@ body {
   gap: 10px;
 }
 .stat-divider { width: 1px; height: 36px; background: rgba(201,162,39,0.25); align-self: center; }
+.yt-icon { display: inline-flex; align-items: center; flex-shrink: 0; margin-top: 1px; }
+.yt-icon svg { display: block; }
 .stat div { display: flex; flex-direction: column; }
 .stat strong {
   font-size: 15px;
