@@ -79,7 +79,7 @@ body {
 /* ── HERO ── */
 .hero {
   min-height: 100vh;
-  padding: 48px 0 48px 56px;
+  padding: 28px 0 28px 56px;
   display: grid;
   grid-template-columns: 1.05fr 1fr;
   gap: 40px;
@@ -107,7 +107,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 .om-badge {
   width: 52px;
@@ -132,20 +132,20 @@ body {
 
 .hero-heading {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(40px, 5vw, 76px);
+  font-size: clamp(38px, 4.4vw, 64px);
   font-weight: 800;
   line-height: 1.05;
   color: var(--white);
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
-.hero-divider { margin-bottom: 22px; }
+.hero-divider { margin-bottom: 14px; }
 .hero-divider svg { display: block; }
 
 .hero-sub {
-  font-size: clamp(15px, 1.4vw, 19px);
+  font-size: clamp(15px, 1.4vw, 18px);
   color: var(--text-light);
-  line-height: 1.6;
-  margin-bottom: 26px;
+  line-height: 1.55;
+  margin-bottom: 18px;
 }
 .hero-sub .gold-text { font-weight: 600; }
 
@@ -155,7 +155,7 @@ body {
   letter-spacing: 2px;
   color: var(--white);
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   padding-left: 12px;
   border-left: 3px solid var(--gold);
   line-height: 1.2;
@@ -165,8 +165,8 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 28px;
+  gap: 8px;
+  margin-bottom: 18px;
 }
 .hero-occasions li {
   display: inline-flex;
@@ -175,7 +175,7 @@ body {
   font-size: 13px;
   color: var(--text-light);
   line-height: 1;
-  padding: 10px 16px;
+  padding: 8px 14px;
   border: 1px solid rgba(201,162,39,0.3);
   border-radius: 50px;
   background: rgba(255,255,255,0.02);
@@ -197,10 +197,10 @@ body {
 .hero-stats {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 24px;
   flex-wrap: wrap;
-  margin-bottom: 28px;
-  padding: 22px 26px;
+  margin-bottom: 18px;
+  padding: 16px 22px;
   border: 1px solid rgba(201,162,39,0.25);
   border-radius: 16px;
   background: rgba(255,255,255,0.02);
@@ -247,9 +247,9 @@ body {
   max-width: 480px;
   background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 100%);
   color: var(--dark);
-  padding: 18px 28px;
+  padding: 15px 28px;
   border-radius: 12px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.3s;
@@ -266,7 +266,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 16px;
+  margin-top: 12px;
   font-size: 14px;
   color: var(--text-muted);
 }
