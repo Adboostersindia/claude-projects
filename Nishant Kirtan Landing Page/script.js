@@ -27,6 +27,20 @@ function buildDots() {
   }
 }
 
+const GAP = 24;
+
+function setCardWidths() {
+  const slider = document.getElementById('testimonials');
+  if (!slider) return;
+  const pv = perView();
+  if (window.innerWidth <= 640) {
+    cards.forEach(c => { c.style.width = ''; });
+    return;
+  }
+  const w = (slider.clientWidth - GAP * (pv - 1)) / pv;
+  cards.forEach(c => { c.style.width = w + 'px'; });
+}
+
 function updateArrows() {
   if (prevBtn) prevBtn.disabled = currentSlide <= 0;
   if (nextBtn) nextBtn.disabled = currentSlide >= slideCount() - 1;
@@ -37,7 +51,7 @@ function goToSlide(index) {
   if (index >= total) index = total - 1;
   if (index < 0) index = 0;
   currentSlide = index;
-  const cardWidth = cards[0].offsetWidth + 24;
+  const cardWidth = cards[0].offsetWidth + GAP;
   track.style.transform = `translateX(-${index * cardWidth}px)`;
   if (dotsContainer) {
     [...dotsContainer.children].forEach((d, i) => d.classList.toggle('active', i === index));
@@ -46,6 +60,7 @@ function goToSlide(index) {
 }
 
 if (cards.length) {
+  setCardWidths();
   buildDots();
   goToSlide(0);
   if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
@@ -54,8 +69,10 @@ if (cards.length) {
   let rt;
   window.addEventListener('resize', () => {
     clearTimeout(rt);
-    rt = setTimeout(() => { buildDots(); goToSlide(0); }, 200);
+    rt = setTimeout(() => { setCardWidths(); buildDots(); goToSlide(0); }, 200);
   });
+  // Recompute once images/fonts settle
+  window.addEventListener('load', () => { setCardWidths(); goToSlide(currentSlide); });
 }
 
 // Sticky nav shadow on scroll
