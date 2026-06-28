@@ -763,7 +763,14 @@ body {
   font-weight: 500;
 }
 
-.why-book-image { overflow: hidden; }
+.why-book-image { overflow: hidden; height: 100%; }
+.why-book-img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  display: block;
+}
 .why-book-img-placeholder {
   width: 100%;
   height: 360px;
