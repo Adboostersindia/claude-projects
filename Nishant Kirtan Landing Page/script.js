@@ -115,7 +115,7 @@ if (bookingForm) {
         });
       }
       bookingForm.reset();
-      window.location.href = 'thank-you.html';
+      window.location.href = 'thank-you';
     } catch (err) {
       alert('Sorry, something went wrong. Please try again or contact us directly.');
       submitBtn.disabled = false;
