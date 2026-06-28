@@ -99,7 +99,6 @@ if (bookingForm) {
     }
 
     const submitBtn = bookingForm.querySelector('.form-submit');
-    const success = document.getElementById('formSuccess');
     const original = submitBtn.textContent;
     submitBtn.disabled = true;
     submitBtn.textContent = 'Submitting…';
@@ -115,12 +114,10 @@ if (bookingForm) {
           body: JSON.stringify(data)
         });
       }
-      success.classList.add('show');
       bookingForm.reset();
-      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      window.location.href = 'thank-you.html';
     } catch (err) {
       alert('Sorry, something went wrong. Please try again or contact us directly.');
-    } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = original;
     }

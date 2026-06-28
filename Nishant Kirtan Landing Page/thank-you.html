@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – Nishant Malaviya Kirtan &amp; Bhajan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=9" />
+  <style>
+    .thankyou-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      background: #1a0800;
+      position: relative;
+      overflow: hidden;
+    }
+    .thankyou-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 30%, rgba(201,162,39,0.12) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .thankyou-card { position: relative; z-index: 1; max-width: 560px; }
+    .thankyou-icon {
+      width: 84px;
+      height: 84px;
+      margin: 0 auto 24px;
+      border: 1.5px solid rgba(201,162,39,0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(201,162,39,0.08);
+    }
+    .thankyou-icon svg { width: 38px; height: 38px; color: #C9A227; }
+    .thankyou-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+    .thankyou-text {
+      font-size: 16px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .thankyou-text strong { color: #C9A227; }
+    .thankyou-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+  <section class="thankyou-section">
+    <div class="thankyou-card">
+      <div class="thankyou-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <h1 class="thankyou-title">Thank You for Reaching Out 🙏</h1>
+      <p class="thankyou-text">
+        Your booking request has been received successfully.<br />
+        <strong>Nishant Malaviya's team</strong> will get in touch with you shortly to discuss your Kirtan session.
+      </p>
+      <div class="thankyou-actions">
+        <a href="index.html" class="btn-hero">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
