@@ -3,6 +3,8 @@ let currentSlide = 0;
 const track = document.getElementById('testimonials-track');
 const cards = document.querySelectorAll('.testimonial-card');
 const dotsContainer = document.getElementById('sliderDots');
+const prevBtn = document.getElementById('testiPrev');
+const nextBtn = document.getElementById('testiNext');
 
 function perView() {
   if (window.innerWidth <= 640) return 1;
@@ -25,23 +27,29 @@ function buildDots() {
   }
 }
 
+function updateArrows() {
+  if (prevBtn) prevBtn.disabled = currentSlide <= 0;
+  if (nextBtn) nextBtn.disabled = currentSlide >= slideCount() - 1;
+}
+
 function goToSlide(index) {
   const total = slideCount();
-  if (index >= total) index = 0;
-  if (index < 0) index = total - 1;
+  if (index >= total) index = total - 1;
+  if (index < 0) index = 0;
   currentSlide = index;
   const cardWidth = cards[0].offsetWidth + 24;
   track.style.transform = `translateX(-${index * cardWidth}px)`;
   if (dotsContainer) {
     [...dotsContainer.children].forEach((d, i) => d.classList.toggle('active', i === index));
   }
+  updateArrows();
 }
 
 if (cards.length) {
   buildDots();
   goToSlide(0);
-  // Auto-advance
-  setInterval(() => goToSlide(currentSlide + 1), 4500);
+  if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
   // Rebuild on resize (responsive perView)
   let rt;
   window.addEventListener('resize', () => {
