@@ -125,8 +125,6 @@ body {
   gap: 0;
   margin-bottom: 14px;
   padding: 10px 0;
-  border-top: 1px solid rgba(201,162,39,0.2);
-  border-bottom: 1px solid rgba(201,162,39,0.2);
 }
 .badge {
   display: flex; align-items: center; gap: 7px;
