@@ -787,9 +787,10 @@ body {
 
 /* ── FAQ ── */
 .faq-section {
-  background: var(--dark);
+  background: #F5EFE0;
   padding: 72px 48px;
 }
+.faq-section .section-heading { color: #1a0800; }
 .faq-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -798,8 +799,8 @@ body {
   margin: 32px auto 0;
 }
 .faq-item {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(201,162,39,0.15);
+  background: rgba(0,0,0,0.02);
+  border: 1px solid rgba(201,162,39,0.25);
   border-radius: 12px;
   padding: 24px 20px;
   display: flex;
@@ -810,12 +811,12 @@ body {
 .faq-item h4 {
   font-size: 14px;
   font-weight: 600;
-  color: var(--white);
+  color: #1a0800;
   line-height: 1.4;
 }
 .faq-item p {
   font-size: 13px;
-  color: var(--text-muted);
+  color: #5c4a35;
   line-height: 1.6;
 }
 
