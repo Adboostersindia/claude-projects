@@ -241,23 +241,22 @@ body {
 }
 
 .btn-hero {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  width: 100%;
-  max-width: 480px;
+  gap: 10px;
+  width: auto;
   background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 100%);
   color: var(--dark);
-  padding: 15px 28px;
+  padding: 14px 30px;
   border-radius: 12px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.3s;
   box-shadow: 0 8px 30px rgba(201,162,39,0.3);
 }
 .btn-hero svg { flex-shrink: 0; }
-.btn-hero .btn-arrow { margin-left: auto; font-size: 22px; }
+.btn-hero .btn-arrow { margin-left: 4px; font-size: 20px; }
 .btn-hero:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 38px rgba(201,162,39,0.45);
@@ -337,8 +336,8 @@ body {
 .videos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 1100px;
+  gap: 28px;
+  max-width: 1320px;
   margin: 40px auto 0;
 }
 .video-card {
@@ -932,7 +931,7 @@ body {
     mask-image: linear-gradient(to bottom, black 72%, transparent 100%);
   }
   .hero-quote-card { display: none; }
-  .btn-hero { max-width: 100%; }
+  .btn-hero { width: 100%; justify-content: center; }
 
   .why-section { grid-template-columns: 1fr; }
   .why-image { min-height: 280px; }
