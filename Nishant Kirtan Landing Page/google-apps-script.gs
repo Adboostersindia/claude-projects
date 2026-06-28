@@ -41,11 +41,14 @@ function doPost(e) {
     // Force the Phone column (column 4) to plain text so "+91..." isn't read as a formula
     sheet.getRange(1, 4, sheet.getMaxRows(), 1).setNumberFormat('@');
 
+    // Prefix with an apostrophe so Sheets stores it as literal text, not a formula
+    var phoneValue = data.phone ? "'" + data.phone : '';
+
     sheet.appendRow([
       new Date(),
       data.name || '',
       data.email || '',
-      data.phone || '',
+      phoneValue,
       data.city || '',
       data.where_do_you_want_to_organize_the_kirtan || '',
       data.when_are_you_planning_the_kirtan || '',
@@ -56,6 +59,9 @@ function doPost(e) {
       data.are_you_ready_to_discuss_and_confirm_booking || '',
       data.please_share_your_preferred_date_and_specific_requirements || ''
     ]);
+
+    // Re-apply plain text format to the cell just written (belt-and-suspenders)
+    sheet.getRange(sheet.getLastRow(), 4).setNumberFormat('@');
 
     return ContentService
       .createTextOutput(JSON.stringify({ result: 'success' }))
