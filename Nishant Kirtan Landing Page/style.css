@@ -1026,8 +1026,8 @@ body {
   .form-grid { grid-template-columns: 1fr; }
   .faq-grid { grid-template-columns: 1fr; }
   .why-points { grid-template-columns: 1fr; }
-  .testimonials-wrap { padding: 0; }
-  .slider-arrow { display: none; }
-  .testimonials-track { flex-direction: column; }
-  .testimonial-card { min-width: 100%; }
+  .testimonials-wrap { padding: 0 40px; }
+  .slider-arrow { width: 36px; height: 36px; }
+  .slider-arrow svg { width: 16px; height: 16px; }
+  .testimonial-card { width: 100%; }
 }
